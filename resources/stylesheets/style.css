@@ -1,1 +1,27 @@
 /* site stylesheet */
+body {
+  height: 2000px;
+}
+
+.banner {
+  min-height: 300px;
+  background-color: yellow;
+}
+
+/* TODO: create scrollable and top stick header */
+header {
+  min-height: 50px;
+  width: 100%;
+  background-color: blue;
+}
+
+main {
+  min-height: 500px;
+  background-color: lightgreen;
+}
+
+footer {
+  min-height: 200px;
+  width: 100%;
+  background-color: red;
+}
