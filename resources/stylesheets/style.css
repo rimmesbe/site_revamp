@@ -91,8 +91,12 @@ main {
   margin: 1rem 0;
 }
 
-.project-text {
+.project:nth-child(even) {
+  direction: rtl;
+}
 
+.project-text {
+  text-align: left;
 }
 
 .project-img {
