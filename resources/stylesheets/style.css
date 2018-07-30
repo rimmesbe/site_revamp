@@ -85,8 +85,7 @@ main {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .project-text {
@@ -94,7 +93,8 @@ main {
 }
 
 .project-img {
-
+  display: flex;
+  align-items: center;
 }
 
 #Oasis-MBS {
