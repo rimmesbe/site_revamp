@@ -85,7 +85,10 @@ main {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 11rem;
   align-items: center;
+  overflow: hidden;
+  margin: 1rem 0;
 }
 
 .project-text {
