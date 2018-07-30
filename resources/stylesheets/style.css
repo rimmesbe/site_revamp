@@ -34,6 +34,25 @@ header {
   background-color: blue;
 }
 
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-link {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link:hover {
+  border: 1px solid white;
+}
+
 main {
   min-height: 500px;
   background-color: lightgreen;
