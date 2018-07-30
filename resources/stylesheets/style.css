@@ -1,4 +1,12 @@
 /* site stylesheet */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   height: 2000px;
 }
@@ -16,7 +24,6 @@ h1 {
 .banner-header {
   font-size: 5rem;
   color: white;
-  margin-top: 20px;
   text-shadow: 2px 2px #349EB6;
 }
 
