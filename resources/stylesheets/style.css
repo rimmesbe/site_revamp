@@ -40,7 +40,7 @@ header {
   background-color: blue;
 }
 
-nav {
+header nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 10vh;
@@ -104,10 +104,6 @@ main {
   align-items: center;
 }
 
-#Oasis-MBS {
-  grid-area: oasis;
-}
-
 .about {
   display: grid;
   grid-gap: 20px;
@@ -133,4 +129,16 @@ footer {
   min-height: 200px;
   width: 100%;
   background-color: red;
+}
+
+.contact-nav {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.contact-header {
+  text-align: center;
 }
