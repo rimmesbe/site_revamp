@@ -81,25 +81,34 @@ main {
 }
 
 .project {
+  height: auto;
+  max-height: 11rem;
   border: 1px dotted red;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 11rem;
   align-items: center;
   overflow: hidden;
   opacity: .8;
+  transition: max-height .7s;
+}
+
+.project.open {
+  height: auto;
+  max-height: 15rem;
 }
 
 /* .project:nth-child(even) {
   direction: rtl;
 } */
 
-.project > *:first-child {
-  transform: translateX(-100%);
-}
-.project > *:last-child {
-  transform: translateX(100%);
+.project > *:first-child { transform: translateX(-100%); }
+.project.open-active > *:first-child { transform: translateX(0); }
+.project > *:last-child { transform: translateX(100%); }
+.project.open-active > *:last-child { transform: translateX(0); }
+
+.project > * {
+  transition: transform .7s;
 }
 
 .project-text {
