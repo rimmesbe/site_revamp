@@ -62,7 +62,6 @@ header nav {
 main {
   display: grid;
   min-height: 500px;
-  margin: 0 50px;
   background-color: lightgreen;
 }
 
@@ -71,9 +70,10 @@ main {
   grid-area: "header";
 }
 
+/* -----------------------Projects----------------------- */
+
 .projects {
   display: grid;
-  margin: 0 50px;
   grid-template-areas:
   "oasis"
   "barter"
@@ -88,11 +88,18 @@ main {
   grid-template-rows: 11rem;
   align-items: center;
   overflow: hidden;
-  margin: 1rem 0;
+  opacity: .8;
 }
 
-.project:nth-child(even) {
+/* .project:nth-child(even) {
   direction: rtl;
+} */
+
+.project > *:first-child {
+  transform: translateX(-100%);
+}
+.project > *:last-child {
+  transform: translateX(100%);
 }
 
 .project-text {
@@ -104,6 +111,13 @@ main {
   align-items: center;
 }
 
+#Oasis-MBS {
+  grid-area: oasis;
+  background: url("../images/Oasis-project.png") no-repeat center center;
+  background-size: 100%;
+}
+
+/* --------------------About---------------------- */
 .about {
   display: grid;
   grid-gap: 20px;
