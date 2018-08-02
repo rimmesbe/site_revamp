@@ -1,3 +1,5 @@
+/* -----TODO: create color variables------ */
+
 /* site stylesheet */
 html {
   -moz-box-sizing: border-box;
@@ -33,7 +35,6 @@ img {
   text-shadow: 2px 2px #349EB6;
 }
 
-/* TODO: create scrollable and top stick header */
 header {
   min-height: 10vh;
   width: 100%;
@@ -195,19 +196,43 @@ main {
 }
 
 footer {
-  min-height: 200px;
+  height: 15rem;
   width: 100%;
-  background-color: red;
-}
-
-.contact-nav {
-  width: 50%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  background: linear-gradient(#116bc5 35%, #f95252 53%, #329dd8 65%);
 }
 
 .contact-header {
   text-align: center;
 }
+
+.contact-nav {
+  width: 50%;
+  height: 10rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-link {
+  color: #d49c9d;
+  font-size: 1.3rem;
+  min-width: 8rem;
+  padding: 2rem;
+  background: linear-gradient(#f95252, #116bc5, #329dd8, #f95252);
+  text-decoration: none;
+  transition: color .7s;
+}
+
+.contact-link:hover {
+  color: white;
+  text-decoration: underline;
+  border-top: 1px solid #329dd8;
+  border-bottom: 1px solid #116bc5;
+  background: linear-gradient(#116bc5 20%, #f95252 50%, #329dd8 80%);
+  /* background: linear-gradient(#329dd8 20%, #f95252 50%, #116bc5 80%); */
+}
+
+.contact-link:first-child { border-radius: 90% 0 0 90%; }
+.contact-link:last-child { border-radius: 0 90% 90% 0; }
