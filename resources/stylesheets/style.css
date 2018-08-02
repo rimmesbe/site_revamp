@@ -91,7 +91,7 @@ main {
   align-items: center;
   overflow: hidden;
   opacity: .8;
-  transition: all .5s;
+  transition: max-height .5s cubic-bezier(0.91,-0.99, 0.7,-0.81);
 }
 
 .project:hover {
