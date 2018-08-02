@@ -37,7 +37,7 @@ img {
 header {
   min-height: 10vh;
   width: 100%;
-  background-color: blue;
+  background-color: #116bc5;
   z-index: 1;
 }
 
@@ -64,10 +64,13 @@ header nav {
   color: white;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(#116bc5, #f95252, #329dd8);
+  background-size:1px 200px;
+  transition: all .5s;
 }
 
 .nav-link:hover {
-  border: 1px solid white;
+  background-position: 50px;
 }
 
 main {
