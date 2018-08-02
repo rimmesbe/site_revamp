@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  height: 2000px;
+
 }
 
 h1 {
@@ -124,6 +124,7 @@ main {
   text-align: left;
   background-color: white;
   border-top: 1px solid black;
+  padding: 20px;
 }
 
 .project-img {
@@ -157,8 +158,9 @@ main {
 
 /* --------------------About---------------------- */
 .about {
+  width: 80%;
+  margin: 0 auto;
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
 }
 
