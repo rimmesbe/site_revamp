@@ -38,6 +38,17 @@ header {
   min-height: 10vh;
   width: 100%;
   background-color: blue;
+  z-index: 1;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.fixed + main {
+  padding-top: 10vh;
 }
 
 header nav {
@@ -62,6 +73,7 @@ header nav {
 main {
   display: grid;
   min-height: 500px;
+  /* padding-top: 16px; */
 }
 
 .section-header {
