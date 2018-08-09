@@ -20,13 +20,9 @@ projects.forEach(project => project.addEventListener("transitionend", toggleActi
 
 window.onscroll = function() {myFunction()};
 
-// Get the header
 const header = document.querySelector("header");
-
-// Get the offset position of the navbar
 var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("fixed");
@@ -34,3 +30,16 @@ function myFunction() {
     header.classList.remove("fixed");
   }
 }
+
+// ---------------------email display----------------
+
+function attachEmail(e) {
+  if (e.target.innerHTML === "Email") {
+    e.target.innerHTML = "RyanImmesberger@gmail.com";
+  } else {
+    e.target.innerHTML = "Email";
+  }
+}
+
+const email = document.querySelector(".contact-link[href='#email']");
+email.addEventListener("click", attachEmail);
