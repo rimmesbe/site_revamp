@@ -125,7 +125,7 @@ header nav {
   transition: all .5s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
   background-position: 50px;
 }
 
