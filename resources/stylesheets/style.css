@@ -214,6 +214,8 @@ main {
   border: 1px solid black;
 }
 
+.project-link__LIVE { }
+
 .project-link__SRC {
   border: 1px solid black;
   width: 10rem;
@@ -222,7 +224,7 @@ main {
   background: #329dd9;
 }
 
-.project-link__SRC:hover {
+.project-link__SRC:hover, .project-link__SRC:focus {
   background: #f95252;
   border: 1px solid white;
   color: white;
@@ -250,6 +252,34 @@ main {
   grid-area: recipe;
   background: url("../images/Recipe-image.png") no-repeat center top;
   background-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .projects {
+    width: 100%;
+    grid-gap: 10px;
+    background: #f95252;
+  }
+
+  .project {
+    max-height: none;
+    grid-template-columns: 1fr;
+    opacity: 1;
+  }
+
+  .project-link__LIVE { order: 1; }
+  .project-text {
+    order: 2;
+    text-align: center;
+    align-items: center;
+  }
+
+  .project > *:first-child { transform: none; }
+  .project.open-active > *:first-child { transform: none; }
+  .project > *:last-child { transform: none; }
+  .project.open-active > *:last-child { transform: none; }
+
 }
 
 /* --------------------About---------------------- */
