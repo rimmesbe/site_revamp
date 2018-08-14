@@ -331,13 +331,12 @@ footer {
   transition: color .7s;
 }
 
-.contact-link:hover {
+.contact-link:hover, .contact-link:focus {
   color: white;
   text-decoration: underline;
   border-top: 1px solid #329dd8;
   border-bottom: 1px solid #116bc5;
   background: linear-gradient(#116bc5 20%, #f95252 50%, #329dd8 80%);
-  /* background: linear-gradient(#329dd8 20%, #f95252 50%, #116bc5 80%); */
 }
 
 .contact-link:first-child { border-radius: 90% 0 0 90%; }
@@ -348,4 +347,33 @@ footer {
   margin: 0;
   padding: 10px;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+  footer {
+    height: auto;
+    align-items: initial;
+    grid-template-rows: auto;
+    background: linear-gradient(to right, #116bc5 35%, #f95252 50%, #329dd8 65%);
+  }
+
+  .contact-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-link {
+    background: linear-gradient(to right, #f95252, #116bc5, #329dd8, #f95252);
+  }
+
+  .contact-link:hover, .contact-link:focus {
+    background: linear-gradient(to right, #116bc5 20%, #f95252 50%, #329dd8 80%);
+    border: none;
+    border-left: 1px solid #329dd8;
+    border-right: 1px solid #116bc5;
+  }
+
+  .contact-link:first-child { border-radius: initial; }
+  .contact-link:last-child { border-radius: initial; }
+
 }
